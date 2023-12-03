@@ -50,7 +50,9 @@ public class LoginPage extends ProjectSpecificMethod {
 		/*
 		 * WelcomePage wp=new WelcomePage(); return wp;
 		 */
-		return new WelcomePage();
+		
+		//return new WelcomePage();use this for seq exec in x,ml
+		return new WelcomePage(driver);//use this for parallel exec in x,ml
 	}
 
 }

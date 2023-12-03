@@ -33,6 +33,6 @@ public class CreateLeadPage extends ProjectSpecificMethod{
 	
 	public ViewLeadPage clickSubmitButton() {
 		driver.findElement(By.name("submitButton")).click();
-		return new ViewLeadPage();
+		return new ViewLeadPage(driver);
 	}
 }
